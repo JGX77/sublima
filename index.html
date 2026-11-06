@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SUBLIMA PRO · Nombres y números para CorelDRAW</title>
+<meta name="description" content="SUBLIMA PRO: complemento para CorelDRAW que arma nombres, números y talles de camisetas de sublimación desde una lista, y vectoriza logos con colores agrupados.">
+<style>
+  :root{
+    --fondo:#151312; --panel:#1f1c1a; --borde:#34302c; --texto:#f2ede8; --tenue:#a59d95;
+    --naranja:#ff7a1a; --naranja2:#e05a00; --ok:#7fd39a;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--fondo);color:var(--texto);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+  a{color:var(--naranja)}
+  .envoltura{max-width:1080px;margin:0 auto;padding:0 20px}
+  header{position:sticky;top:0;z-index:5;background:rgba(21,19,18,.92);backdrop-filter:blur(6px);border-bottom:1px solid var(--borde)}
+  header .envoltura{display:flex;align-items:center;justify-content:space-between;height:60px}
+  .marca{font-weight:800;font-size:22px;color:var(--naranja);letter-spacing:.5px;text-decoration:none}
+  .marca small{color:var(--tenue);font-weight:500;font-size:13px;margin-left:8px;letter-spacing:0}
+  nav a{color:var(--tenue);text-decoration:none;margin-left:20px;font-size:14px}
+  nav a:hover{color:var(--texto)}
+  .boton{display:inline-block;background:var(--naranja);color:#1a1008;font-weight:700;text-decoration:none;padding:12px 26px;border-radius:6px;border:0}
+  .boton:hover{background:#ff8d3a}
+  .boton.chico{padding:8px 16px;font-size:14px;margin-left:20px}
+  .portada{padding:72px 0 48px;display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+  .portada h1{font-size:44px;line-height:1.12;margin:0 0 16px}
+  .portada h1 span{color:var(--naranja)}
+  .portada p{color:var(--tenue);font-size:18px;margin:0 0 28px}
+  .portada img{width:100%;border-radius:8px;border:1px solid var(--borde);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .nota{font-size:13px;color:var(--tenue);margin-top:12px}
+  section{padding:56px 0;border-top:1px solid var(--borde)}
+  h2{font-size:30px;margin:0 0 8px}
+  .sub{color:var(--tenue);margin:0 0 32px}
+  .grilla{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .tarjeta{background:var(--panel);border:1px solid var(--borde);border-radius:8px;padding:22px}
+  .tarjeta h3{margin:0 0 8px;font-size:18px;color:var(--naranja)}
+  .tarjeta p{margin:0;color:var(--tenue);font-size:15px}
+  .galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .galeria figure{margin:0;background:var(--panel);border:1px solid var(--borde);border-radius:8px;overflow:hidden}
+  .galeria img{width:100%;display:block}
+  .galeria figcaption{padding:10px 14px;font-size:14px;color:var(--tenue)}
+  .precios{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:760px}
+  .precio{background:var(--panel);border:1px solid var(--borde);border-radius:10px;padding:28px}
+  .precio.destacado{border-color:var(--naranja)}
+  .precio h3{margin:0 0 4px;font-size:20px}
+  .monto{font-size:42px;font-weight:800;margin:8px 0 2px}
+  .monto small{font-size:16px;color:var(--tenue);font-weight:500}
+  .precio ul{padding-left:18px;color:var(--tenue);margin:16px 0 24px}
+  .preguntas details{background:var(--panel);border:1px solid var(--borde);border-radius:8px;padding:16px 20px;margin-bottom:12px}
+  .preguntas summary{cursor:pointer;font-weight:600}
+  .preguntas p{color:var(--tenue);margin:10px 0 0}
+  footer{border-top:1px solid var(--borde);padding:32px 0;color:var(--tenue);font-size:14px}
+  footer .envoltura{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  @media (max-width:860px){
+    .portada{grid-template-columns:1fr;padding-top:40px}
+    .portada h1{font-size:34px}
+    .grilla,.galeria{grid-template-columns:1fr 1fr}
+    nav a:not(.boton){display:none}
+  }
+  @media (max-width:560px){
+    .grilla,.galeria,.precios{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="envoltura">
+    <a class="marca" href="#">SUBLIMA<small>PRO 3.0</small></a>
+    <nav>
+      <a href="#funciones">Funciones</a>
+      <a href="#capturas">Capturas</a>
+      <a href="#precios">Precios</a>
+      <a href="#preguntas">Preguntas</a>
+      <a class="boton chico comprar" href="#precios">Comprar</a>
+    </nav>
+  </div>
+</header>
+
+<main class="envoltura">
+
+  <div class="portada">
+    <div>
+      <h1>Nombres, números y talles en tus camisetas, <span>en segundos</span>.</h1>
+      <p>SUBLIMA PRO es un complemento para CorelDRAW pensado para talleres de sublimación. Pegás la lista del pedido y arma cada prenda con su nombre, número y talle, lista para imprimir. Además, vectoriza escudos y logos con los colores agrupados.</p>
+      <a class="boton comprar" href="#precios">Comprar SUBLIMA PRO</a>
+      <div class="nota">Pago único · Licencia de por vida · Para CorelDRAW 2025 en Windows 10/11</div>
+    </div>
+    <img src="img/pedido.jpg" alt="Ventana PEDIDO de SUBLIMA PRO dentro de CorelDRAW">
+  </div>
+
+  <section id="funciones">
+    <h2>Todo lo que hace</h2>
+    <p class="sub">Funciona adentro de CorelDRAW, con tus propios moldes.</p>
+    <div class="grilla">
+      <div class="tarjeta"><h3>Pedido</h3><p>Pegás la lista (nombre, número, talle), la revisa buscando errores y genera todas las prendas acomodadas en la hoja.</p></div>
+      <div class="tarjeta"><h3>Molde</h3><p>Marcás una sola vez dónde va el nombre y el número. Si un nombre es largo, se angosta solo para no salirse.</p></div>
+      <div class="tarjeta"><h3>Objetos</h3><p>Cambiá un logo o un auspicio en todos los talles de una sola vez, conservando el tamaño y la posición.</p></div>
+      <div class="tarjeta"><h3>Vector</h3><p>Convierte escudos y logos en vectores limpios: un grupo por color, para recolorearlos con un clic.</p></div>
+      <div class="tarjeta"><h3>Diseño</h3><p>Pone el diseño en cada pieza del molde (delantero, dorso, mangas…) y lo ajusta al ancho de cada talle.</p></div>
+      <div class="tarjeta"><h3>Detalles</h3><p>Acomodás los detalles en un talle y se copian en los demás en el mismo lugar y a escala.</p></div>
+    </div>
+  </section>
+
+  <section id="capturas">
+    <h2>Capturas</h2>
+    <p class="sub">Así se ve dentro de CorelDRAW.</p>
+    <div class="galeria">
+      <figure><img src="img/pedido.jpg" alt="Pestaña PEDIDO" loading="lazy"><figcaption>Pedido: de la lista a las prendas</figcaption></figure>
+      <figure><img src="img/molde.jpg" alt="Pestaña MOLDE" loading="lazy"><figcaption>Molde: marcás nombre y número una vez</figcaption></figure>
+      <figure><img src="img/objetos.jpg" alt="Pestaña OBJETOS" loading="lazy"><figcaption>Objetos: cambiá logos en todos los talles</figcaption></figure>
+      <figure><img src="img/vector.jpg" alt="Pestaña VECTOR" loading="lazy"><figcaption>Vector: escudos con colores agrupados</figcaption></figure>
+      <figure><img src="img/diseno.jpg" alt="Ventana DISEÑO" loading="lazy"><figcaption>Diseño: cada pieza recibe su diseño</figcaption></figure>
+      <figure><img src="img/detalles.jpg" alt="Pestaña DETALLES" loading="lazy"><figcaption>Detalles: iguales en todos los talles</figcaption></figure>
+    </div>
+  </section>
+
+  <section id="precios">
+    <h2>Precios</h2>
+    <p class="sub">Pagás una sola vez. Recibís por email tu clave de licencia y el instalador.</p>
+    <div class="precios">
+      <div class="precio">
+        <h3>1 PC</h3>
+        <div class="monto">60 <small>USD</small></div>
+        <ul><li>Licencia de por vida</li><li>Todas las funciones</li><li>Podés pasarla a otra PC</li></ul>
+        <a class="boton comprar" href="#">Comprar 1 PC</a>
+      </div>
+      <div class="precio destacado">
+        <h3>3 PC</h3>
+        <div class="monto">165 <small>USD</small></div>
+        <ul><li>Para el taller completo</li><li>Todas las funciones</li><li>Una sola clave para 3 PCs</li></ul>
+        <a class="boton comprar" href="#">Comprar 3 PC</a>
+      </div>
+    </div>
+    <p class="nota">Pago seguro con tarjeta a través de Polar. En la página de pago elegís 1 PC o 3 PC.</p>
+  </section>
+
+  <section id="preguntas" class="preguntas">
+    <h2>Preguntas frecuentes</h2>
+    <p class="sub">&nbsp;</p>
+    <details><summary>¿Qué necesito para usarlo?</summary><p>CorelDRAW 2025 en Windows 10 u 11 de 64 bits.</p></details>
+    <details><summary>¿Necesita internet?</summary><p>Solo para activar la licencia la primera vez y, cada tanto, para confirmarla. Funciona aunque tengas CorelDRAW bloqueado de internet en el firewall.</p></details>
+    <details><summary>¿Cómo lo activo?</summary><p>Después de pagar te llega un email con tu clave (empieza con SUBLIMA-) y el instalador. Instalás, abrís CorelDRAW, tocás SUBLIMA y pegás la clave. Ojo: el número de pedido no es la clave.</p></details>
+    <details><summary>¿Puedo cambiar de computadora?</summary><p>Sí. Liberás la PC desde la ventana de licencia (o desde tu portal de cliente de Polar) y activás la misma clave en la nueva.</p></details>
+    <details><summary>¿Es una suscripción?</summary><p>No. Es un pago único y la licencia no vence.</p></details>
+  </section>
+
+</main>
+
+<footer>
+  <div class="envoltura">
+    <div>© 2026 JGX Studio · SUBLIMA PRO · Hecho en Paraguay</div>
+    <div>Soporte: <a href="mailto:jgxstudio.soporte@gmail.com">jgxstudio.soporte@gmail.com</a></div>
+  </div>
+</footer>
+
+<script>
+  // >>> PEGÁ ACÁ EL LINK DE COMPRA DE POLAR (Productos → Checkout Links) <<<
+  var LINK_COMPRA = "https://buy.polar.sh/polar_cl_IkJacVFtsd0toiXXkCYSDSo8CNaqYxg91a66h0s7OEn";
+  if (LINK_COMPRA) {
+    document.querySelectorAll(".comprar").forEach(function (a) { a.href = LINK_COMPRA; });
+  }
+</script>
+</body>
+</html>
