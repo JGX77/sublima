@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://jgx77.github.io/sublima/sitemap.xml
