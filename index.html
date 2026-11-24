@@ -13,7 +13,7 @@
 <meta property="og:image" content="https://jgx77.github.io/sublima/img/compartir.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SUBLIMA PRO","applicationCategory":"DesignApplication","operatingSystem":"Windows 10, Windows 11","description":"Macro y complemento para CorelDRAW 2019 a 2027 que genera camisetas de sublimación con nombres, números y talles desde una lista, cambia auspicios en todos los talles y vectoriza escudos.","url":"https://jgx77.github.io/sublima/","inLanguage":"es","offers":[{"@type":"Offer","name":"1 PC","price":"60","priceCurrency":"USD"},{"@type":"Offer","name":"3 PC","price":"165","priceCurrency":"USD"}],"publisher":{"@type":"Organization","name":"JGX Studio"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"SUBLIMA PRO","applicationCategory":"DesignApplication","operatingSystem":"Windows 10, Windows 11","description":"Macro y complemento para CorelDRAW 2019 a 2027 que genera camisetas de sublimación con nombres, números y talles desde una lista, cambia el diseño y los auspicios en todos los talles a la vez y vectoriza escudos.","url":"https://jgx77.github.io/sublima/","inLanguage":"es","offers":[{"@type":"Offer","name":"1 PC","price":"60","priceCurrency":"USD"},{"@type":"Offer","name":"3 PC","price":"165","priceCurrency":"USD"}],"publisher":{"@type":"Organization","name":"JGX Studio"}}
 </script>
 <style>
   :root{
@@ -63,7 +63,13 @@
   .preguntas p{color:var(--tenue);margin:10px 0 0}
   footer{border-top:1px solid var(--borde);padding:32px 0;color:var(--tenue);font-size:14px}
   footer .envoltura{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  .nuevo{display:grid;grid-template-columns:1fr 330px;gap:36px;align-items:center}
+  .nuevo .pasos{display:grid;gap:14px;margin-top:8px}
+  .nuevo video{width:100%;border-radius:12px;border:1px solid var(--borde);box-shadow:0 20px 60px rgba(0,0,0,.5)}
+  .etiqueta{display:inline-block;background:var(--naranja);color:#1a1008;font-weight:800;font-size:12px;letter-spacing:.6px;padding:3px 10px;border-radius:20px;margin-bottom:10px}
   @media (max-width:860px){
+    .nuevo{grid-template-columns:1fr}
+    .nuevo video{max-width:360px;justify-self:center}
     .portada{grid-template-columns:1fr;padding-top:40px}
     .portada h1{font-size:34px}
     .grilla,.galeria{grid-template-columns:1fr 1fr}
@@ -78,8 +84,9 @@
 
 <header>
   <div class="envoltura">
-    <a class="marca" href="#">SUBLIMA<small>PRO 3.0</small></a>
+    <a class="marca" href="#">SUBLIMA<small>PRO 3.2</small></a>
     <nav>
+      <a href="#talles">Talles</a>
       <a href="#funciones">Funciones</a>
       <a href="#capturas">Capturas</a>
       <a href="#precios">Precios</a>
@@ -101,6 +108,21 @@
     <video src="video/sublima_demo.mp4" poster="video/poster.jpg" autoplay muted loop playsinline controls style="width:100%;max-width:400px;justify-self:center;border-radius:12px;border:1px solid var(--borde);box-shadow:0 20px 60px rgba(0,0,0,.5)"></video>
   </div>
 
+  <section id="talles">
+    <div class="nuevo">
+      <div>
+        <span class="etiqueta">NUEVO EN 3.2</span>
+        <h2>Un diseño en todos los talles, a la vez</h2>
+        <p class="sub">Guardás tus moldes una sola vez y para cada pedido traés solo los talles que necesitás. El diseño cambia en todos juntos.</p>
+        <div class="pasos">
+          <div class="tarjeta"><h3>1 · Guardar</h3><p>Seleccionás un talle completo, elegís el talle y el género y lo guardás. Queda en la página MOLDES del mismo archivo: no hay archivos aparte.</p></div>
+          <div class="tarjeta"><h3>2 · Traer</h3><p>Marcás en la lista los talles del pedido y aparecen en tu página, en un lugar libre, sin pisar nada y con su tamaño exacto.</p></div>
+          <div class="tarjeta"><h3>3 · Poner</h3><p>Seleccionás tu diseño, elegís la pieza y apretás PONER: cambia en todos los talles. Usa símbolos de CorelDRAW, así que no traba la PC.</p></div>
+        </div>
+      </div>
+      <video src="video/talles.mp4" poster="video/talles.jpg" muted loop playsinline controls preload="none"></video>
+    </div>
+  </section>
   <section id="errores">
     <h2>Cero errores en el pedido</h2>
     <p class="sub">El mayor riesgo no es el tiempo: es poner un nombre en el talle equivocado y perder el pedido del club.</p>
@@ -120,6 +142,7 @@
       <div class="tarjeta"><h3>Objetos</h3><p>Cambiá un logo o un auspicio en todos los talles de una sola vez, conservando el tamaño y la posición.</p></div>
       <div class="tarjeta"><h3>Vector</h3><p>Convierte escudos y logos en vectores limpios: un grupo por color, para recolorearlos con un clic.</p></div>
       <div class="tarjeta"><h3>Diseño</h3><p>Pone el diseño en cada pieza del molde (delantero, dorso, mangas…) y lo ajusta al ancho de cada talle.</p></div>
+      <div class="tarjeta"><h3>Talles</h3><p>Tu moldería guardada por talle y género. Traés los talles del pedido y un solo diseño cubre todas las piezas de todos los talles.</p></div>
       <div class="tarjeta"><h3>Detalles</h3><p>Acomodás los detalles en un talle y se copian en los demás en el mismo lugar y a escala.</p></div>
     </div>
   </section>
@@ -171,6 +194,8 @@
     <details><summary>¿Necesita internet?</summary><p>Solo para activar la licencia la primera vez y, cada tanto, para confirmarla. Funciona aunque tengas CorelDRAW bloqueado de internet en el firewall.</p></details>
     <details><summary>¿Cómo lo activo?</summary><p>Después de pagar te llega un email con tu clave (empieza con SUBLIMA-) y el instalador. Instalás, abrís CorelDRAW, tocás SUBLIMA y pegás la clave. Ojo: el número de pedido no es la clave.</p></details>
     <details><summary>¿Puedo cambiar de computadora?</summary><p>Sí. Liberás la PC desde la ventana de licencia (o desde tu portal de cliente de Polar) y activás la misma clave en la nueva.</p></details>
+    <details><summary>Windows dice "Windows protegió su PC" al instalar. ¿Es seguro?</summary><p>Sí. Ese aviso (SmartScreen) aparece con programas nuevos que todavía no tienen muchas descargas. Tocá <b>Más información</b> y después <b>Ejecutar de todas formas</b>. El instalador no pide permisos de administrador y solo copia SUBLIMA en tu usuario.</p></details>
+    <details><summary>¿Cambia el tamaño de mis moldes?</summary><p>No. TALLES copia tus moldes tal cual están dibujados; el diseño se adapta a cada pieza, pero el molde nunca se toca.</p></details>
     <details><summary>¿Es una suscripción?</summary><p>No. Es un pago único y la licencia no vence.</p></details>
   </section>
 
